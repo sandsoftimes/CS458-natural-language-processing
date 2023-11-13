@@ -1,0 +1,392 @@
+786--------------------------NLP
+
+edit-distance-done (https://www.youtube.com/watch?v=GrUx31RqyeY)
+
+second video edit-dance-done (https://www.youtube.com/watch?v=Dd_NgYVOdLk) 
+
+-----------------------------------edit distance-------------------------------- 
+
+1-insert 
+
+2-delete 
+
+3-replace 
+
+a b c d e j
+
+a k c d g 
+
+Dynamic Programming we will use 
+
+and we make colum of length 
+
+0 0 for colum,row [1,2] 
+
+then we will fill up the table and we will get the answer 
+
+in dp we will define base condition 
+
+base condition 
+
+
+N-GRAM Language Model-------------------------------------------------
+
+
+
+probability of sentence or sequence of words 
+
+P(W)=P(w1,w2,w3,.....,wn)
+
+Probability of an upcomming word P(wn|w1,w2,w3,.....,wn-1)
+
+Conditional Probability:
+
+P(B|A)=P(AnB)/P(A)
+
+Chain Rule: 
+
+P(w1,w2,....,wn)=P(wi|w1,w2,w3,.....,wi-1)
+
+Its water is so transparent that.....
+
+Markovian Simplifying Assumption (bigram)
+
+P(w1,w2,....,wn)=P(wi|wi-1)
+
+
+-----------------------NGRAM Youtube------------
+
+unigram = select one item 
+
+bigram = select two items 
+
+trigram = select three items
+
+N-Grams = select n items 
+
+stop words are: is,a e.t.c so we elimate the stop words in the preprocessing steps.
+
+-----Another N-Gram-----Video (https://www.youtube.com/watch?v=5263Xqr1YCc)
+
+Language model
+
+which word to choose first 
+
+P(x,y)=p(x|y)p(y)
+
+P(x,y,z)=p(x)p(y|x)p(z|x,y)
+
+p(she,is,dead)=p(she)p(is|she)p(dead|she is)
+
+Uni-gram=calculates probability of a word based on its previous 1 words
+
+Bi-gram=calculates probability of a word based on its previous 2 words
+
+Tri-gram=calculates probability of a word based on its previous 3 words
+
+and so on
+
+more grams will give more accurate results but we stay on bigrams to make it simple
+
+-------------Numerical on N-Gram-Model-------------https://www.youtube.com/watch?v=FTBOUMgfXuU
+
+------------Another Numerical on n-gram----------https://www.youtube.com/watch?v=f0xlSjpIS80
+
+Other Measures----------------------------------------
+
+Avoiding Underflows:
+
+p1p2p3p4=exp(logp1+logp2+logp3+logp4)
+
+Perplexity:
+
+PP(W)=P(w1,w2,w3,.....,wi)**-1/n = nSquareroot(1/P(w1,w2,w3,.....,wn))
+
+ENTROPY:
+
+H(W)=-Sigma p(wi)logbase2p(wi)
+
+BACkoff And Interpolation:
+
+Backoff: Trigram->Bigram->Unigram
+
+Interpolation: Trigram+Bigram+Unigram:
+
+P(wi|wi-2,wi-1)=LemdaP(wi|wi-2,wi-1)+LemdaP(wi|wi-1)+LemdaP(wi)
+
+where Lemdai=1
+
+-----------------Pendings--------------------------
+
+NAIVE BAYES CLASSIFIER ? 
+
+Berkeley Resturant Project Corpus ?
+
+786-Natural-Language-Processing
+
+	-7151 langauges in the world 
+	
+	-74 Languages in Pakistan
+	
+NATURAL Language:
+
+	-A strutured medium that helps people communicates with each other and evolves over time
+	
+		-GeoGraphical Languages: French,Chineses
+		-Historical Languages: Mohenjodaro
+		-Non-Verbal Languages: Sighns,Whistle
+
+Languge Family:
+	
+	-A group of languages that descent from a single common anchestrol language
+
+LANGUAGE Locales:
+	
+	-Data Writing Style
+	-Number Writing 
+	-Writing Orientation
+	-TimeZone
+	-WritingSystem(Roman,Arabic,e.t.c)
+	-Writing Script(Naskh)
+	-Currency Writing Style
+	-Punctuation Mark Systen
+	-Keyboards
+	-User Interface Translation
+	
+Phonemes & Graphimes:
+
+	-Work we speak are phonemes
+	
+	-Those words when written becomes graphmies
+	
+	-Phonemes and gramphemes are used in NLU(Natural Language Understanding)
+	
+Formal Language:
+
+	- A formal lanugage (L) contains words (W) whose letter are taken from an alphabet(A)
+	according to a specific set of rules
+	
+		-Well formedness: Quality of words that conform to a grammer
+		-Word:A string of letters
+		-Letter:An element of an alphabet
+		-Alphabet:A finite set of character encoding
+		-Rules: Based on logicClass comments
+￼
+Add class comment…
+		Class comments
+￼
+Add class comment…
+Syntactically vs Semantically Correctness:
+
+	-Semantic=Meaning
+	
+	-Syntatic=Syntax
+	
+	-Examples:
+	
+		- Tom goes to school, Give me a glass of water (Sematically correct but syntacticlly incorrect)
+		-School goes to Tom, Give me a glass of dog (Syntactically correct but semantically incorrect)
+		
+Generative Theory Of Languages:
+
+	-The basic form of language is set of rules that are universal for all humans
+	
+Linguistic:
+
+	Science of languages which covers areas such as syntax,grammer,punctuation,graphemes,phoenems
+	
+Computational Linguistic:
+	
+	Studying linguistics using computational tools and techniques is called as computational liguistic
+	
+NATURAL-Language-Processing = Artifical Intelligence+Computational Linguistics
+
+Synchronic: Studying state of a language at a given point in a history
+
+Dichronic: Studying different state of a lanuguage over decades or centuries
+
+Computer Science has: Aritifical Intelligence and Computational Linguistics
+
+Linguistic Variations: 
+	
+	-Descriptive Linguistic: Examine grammer of languages
+	-Presciptive Linguistic: Examine Well-formedness of a language
+	-Theoratical Linguistic: Examine Langugaes on the basis of corpuses
+	-Historical Linguistic: Examine history of a language
+	
+NATURAL LANGUAGE PROCESSING:
+	
+	-Shift from a theoratical inquiry of languages towards practical applications
+	
+		-Lexical
+		-Syntactic
+		-Semantic
+		
+		-Lexical:
+		
+			- Lemmatization
+			
+			- segmentation
+			
+			- stemming
+		
+		-Syntax:
+			
+			-Grammer
+			
+			-Parts of Speech Tagging
+			
+			-Parsing
+			
+			-Word Segmentation
+			
+		-Semantic: 
+		
+			-Lexical semantic
+			
+			-optical character recognition
+			
+			-NLU (Natural Language understanding)
+			
+			-NLG (Natural Language generation)
+			
+			-Sentiment Analysis
+			
+			-NER (Name Entity Recognition)
+			
+Parts Of Speech Tagging:
+
+	Marking up a word in a text corpus corresponding to a particular parts of speech
+	
+	Semantic graphs for pos tagging
+	
+NLP Moddel Architecture:
+
+	-Develop Problem
+	
+	-Collect/Gather Data
+	
+	-Analyze Data
+	
+	-Preprocess Data
+	
+	-Feature Engineering
+	
+	-Selecting an AI Model
+	
+	-Testing and Evaluation
+	
+Data Sources:
+
+	-ocr
+	-social media feed
+	-corpus
+
+Data Analyze:
+
+	-no of words
+	-total sentences
+	-total punctuations
+	
+Corpus:
+
+	Metdata
+	collection of words
+	
+File Formats:
+
+	json
+	xml
+
+Data Preprocess:
+
+	Normalization
+	Removing OOV out of vocabulary words e.t.c
+
+Word: A unit of analysis
+
+Lexical:
+	-lemmazation: A lexical form having same stem and same sense=Cars-Car,Caring-Care
+	-stemming: A lexical form obtain from removing suffix and prefix with same stem but different sense=Telephone-Phone-Icecream-ice,Caring-car
+	-segmentation: Breaking down larger units into smaller one on the basis of punctuation and spaces
+
+Feature Engineering:
+
+	-N-Grams 
+	-Bag of Words
+	
+Result Evaluation:
+
+	-accuracy
+	-recall
+	-precision
+	
+Career For Computational Linguistics (COCL)
+
+Regular Expression:
+
+	Langugae for specifying text strings
+		
+Edit Distance:
+
+	-Measures similarity between two strings
+	
+	-Minimum number of operations to transform one string to another 
+	
+	-insertion cost=1
+	
+	-deletion cost=1
+	
+	-substitution cost=1
+	
+	-Top to bottom insertion
+	
+	-Left to right deletion
+	
+Edit Distance:
+
+	-Is also known as Levenshtein's Distance Variations
+	
+	-used in spelling correction
+	
+	-closet sentence 
+	
+	-suggestion
+
+N-Gram Model: 
+
+	-Applications:
+	
+		-Machine Translation
+		-Spell Correction
+		-Speech Recognition
+		-Work Picking
+		-Handwriting Recognition
+		-Questioning Answering
+		
+	-N-Gram Model is also known as Probablistic Langugae Model
+	
+	-It tells the probability of an upcomming word
+	
+	It has all grams from Uni gram to N-Grams
+
+Markovian  Simplifying Assumption:
+
+	Works by converting the N-Grams to Bi-Grams
+	
+SMOOTHING MODELS:
+
+	-Backoff: Trigram->Bigram->Unigram
+	
+	-Interpolation:Trigram+Bigram+Unigram
+	
+For Sentiment Analysis:
+
+	-We use Naive Bayes Classifier
+	
+	-Bag Of Words: Unordered set of words, with their positional information ignored, along with their frequency of occurence in the document
+	
+	
+			
+
+
