@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/spoofy/Downloads/Semester 7/CS458-natural-language-processing/abidi-labs/lab-1-content/chatbot/.env/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from weasel.cli import app
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(app())
